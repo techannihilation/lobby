@@ -1,10 +1,10 @@
 # lobby
 
-This is the upcoming cross-platform lobby for Tech Annihilation written in [flutter](https://flutter.dev/).
+This is the upcoming cross-plattform lobby for Tech Annihilation written in [flutter](https://flutter.dev/).
 
 A live version of it can be seen at [lobby.techa-rts.com](https://lobby.techa-rts.com)
 
-## Supported Platforms
+## Supported Plattforms
 
 We target:
 
@@ -12,7 +12,7 @@ We target:
 - Windows
 - Web
 
-If there's time there will be a version for:
+If there's time there will be a chat only version for:
 
 - Android
 - iOS
