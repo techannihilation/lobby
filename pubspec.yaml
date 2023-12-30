@@ -48,6 +48,7 @@ dependencies:
   intl: ^0.18.0
   gettext: ^1.2.0
   gettext_parser: ^0.2.0
+  url_strategy: ^0.2.0
 
 dev_dependencies:
   flutter_test:

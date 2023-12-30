@@ -5,6 +5,7 @@ import 'package:path_provider/path_provider.dart';
 import 'package:hydrated_bloc/hydrated_bloc.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 import "package:gettext/gettext.dart";
+import 'package:url_strategy/url_strategy.dart' show setPathUrlStrategy;
 
 import 'package:lobby/global_router.dart';
 import 'package:lobby/global_bloc_observer.dart';
@@ -14,6 +15,8 @@ import 'package:lobby/screen/wide/router.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
+  setPathUrlStrategy();
 
   HydratedBloc.storage = await HydratedStorage.build(
     storageDirectory: kIsWeb
