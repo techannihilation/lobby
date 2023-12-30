@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart' hide ProgressIndicator;
 
 import 'package:lobby/global_router.dart';
+import 'package:lobby/bloc/settings/settings_state.dart';
+import 'package:lobby/screen/wide/base_fullscreen.dart';
 
-class FourOFourScreen extends StatelessWidget {
+class FourOFourScreen extends BaseFullscreen {
   static final route = buildRoute(
       key: route404,
       uri: "/404",
@@ -14,7 +16,21 @@ class FourOFourScreen extends StatelessWidget {
   const FourOFourScreen({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return Container();
+  Widget content(BuildContext context, SettingsState state) {
+    return SizedBox(
+      height: MediaQuery.of(context).size.height,
+      width: MediaQuery.of(context).size.width,
+      child: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            ElevatedButton(
+                onPressed: () => Navigator.of(context)
+                    .pushReplacementNamed(GlobalRouter().buildUri(routeLogin)),
+                child: const Text("404"))
+          ],
+        ),
+      ),
+    );
   }
 }
