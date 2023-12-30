@@ -1,16 +1,26 @@
-# flutter_lobby
+# lobby
 
-A new Flutter project.
+This is the upcoming cross-platform lobby for Tech Annihilation written in [flutter](https://flutter.dev/).
 
-## Getting Started
+A live version of it can be seen at [lobby.techa-rts.com](https://lobby.techa-rts.com)
 
-This project is a starting point for a Flutter application.
+## Supported Platforms
 
-A few resources to get you started if this is your first Flutter project:
+We target:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Linux
+- Windows
+- Web
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+If there's time there will be a version for:
+
+- Android
+- iOS
+
+## Authors
+
+- René Jochum [@jochumdev](https://github.com/jochumdev)
+
+## License
+
+Apache 2.0
